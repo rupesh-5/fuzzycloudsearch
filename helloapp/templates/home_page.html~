@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to the search page. Please enter the search phrase:</title>
+    </head>
+    <body>
+	<form action="/search/" method="GET">
+	    Search query:<br>
+	    <input type="text" name="searchquery" value="Functional Programming">
+	    <br><br>
+	    <input type="submit" value="Search">
+	</form>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The results for your query are:</title>
+    </head>
+
+    <body>
+        <h1>The results for the query "{{query}}" are:</h1>
+
+        {% if results %}
+            <ul>
+                {% for result in results %}
+                <li><a href="http://0.0.0.0:8000/{{query}}/{{result}}">{{result}}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <strong>There are no results present.</strong>
+        {% endif %}
+
+    </body>
+</html>
+
+
